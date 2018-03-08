@@ -1,0 +1,48 @@
+{
+  "name": "projObject",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "projectName": {
+      "type": "string",
+      "required": true
+    },
+    "projectCode": {
+      "type": "string",
+      "required": true
+    },
+    "projectOwner": {
+      "type": "string"
+    },
+    "projectMember": {
+      "type": [
+        "string"
+      ]
+    },
+    "ticket": {
+      "type": [
+        "number"
+      ]
+    },
+    "scans": {
+      "type": [
+        "object"
+      ],
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

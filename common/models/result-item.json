@@ -1,0 +1,34 @@
+{
+  "name": "resultItem",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "identify": {
+      "type": "number",
+      "required": true
+    },
+    "displayTxt": {
+      "type": "string",
+      "required": true
+    },
+    "pathFile": {
+      "type": "string",
+      "required": true
+    },
+    "lineNumber": {
+      "type": "number",
+      "required": true
+    },
+    "result": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
